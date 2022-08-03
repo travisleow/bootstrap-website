@@ -1,0 +1,45 @@
+#html {
+  background-color: #f6b26b;
+}
+
+#css {
+  background-color: #9fc5e8;
+}
+
+#js {
+  background-color: #ffe599;
+}
+
+/*Header styles*/
+header {
+  /* Image by Peggychoucair from Pixabay */
+  background-image: url('../img/showcase_aboutme.jpg');
+}
+
+#text {
+  font-size: 70px;
+}
+
+/*Image style*/
+.wandering {
+  width: 100%;
+}
+
+
+/*Carousel Styles*/
+.carousel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: black;
+  opacity: 0.2;
+}
+
+.myself {
+  border-radius: 40% 60% 45% 55% / 30% 30% 70% 70%;
+}
+
+
+  

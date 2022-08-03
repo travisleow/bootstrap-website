@@ -1,0 +1,12 @@
+mobile (normal -> sm/md) => 1 column
+□	
+□	
+□	
+tablet (sm/md -> lg/xl) => 2 column
+□	 □
+□	 □	......	
+pc (lg/xl -> normal) => 3 column or more
+□	 □	  □	......
+
+parallax js:
+https://www.youtube.com/watch?v=llv5kW4sz0U
