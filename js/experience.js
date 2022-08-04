@@ -8,7 +8,7 @@
 
 var r = 0;
 //Define text to be printed with typing effect
-var txt = "Singapore Poly";
+var txt = "Singapore Polytechnic";
 
 function typeWriter(text) {
     //evaluates an expression every 0.3s intervals

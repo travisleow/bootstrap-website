@@ -19,6 +19,8 @@
 
 /*HTML styles*/
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   animation: transitionIn 0.75s;
   scroll-padding-top: 80px;
 }
