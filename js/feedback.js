@@ -14,7 +14,7 @@ let currentPhrase = [];
 let isDeleting = false;
 let isEnd = false;
 
-function loop () {
+function loopWriter() {
   isEnd = false;
   textDisplay.innerHTML = currentPhrase.join('');
 
@@ -46,18 +46,16 @@ function loop () {
       }
     }
   }
-  const spedUp = 65;
-  const normalSpeed = 250;
   let time;
   if (isEnd)
   time = 1500;
   else if (isDeleting)
-  time = spedUp;
+  time = 65;
   else 
-  time = normalSpeed;
-  setTimeout(loop, time);
+  time = 250;
+  setTimeout(loopWriter, time);
 }
-loop();
+loopWriter();
 
 var r = 0;
 //Define text to be printed with typing effect
