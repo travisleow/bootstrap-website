@@ -46,11 +46,11 @@ function loop () {
       }
     }
   }
-  const spedUp = Math.random() * (80 -50) + 50;
-  const normalSpeed = Math.random() * (300 -200) + 200;
+  const spedUp = 65;
+  const normalSpeed = 250;
   let time;
   if (isEnd)
-  time = 2000;
+  time = 1500;
   else if (isDeleting)
   time = spedUp;
   else 

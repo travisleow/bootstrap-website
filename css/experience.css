@@ -1,5 +1,8 @@
-.backg {
-    background-image: radial-gradient(circle, #2bb6b2, #2ab0b2, #2cabb2, #31a5b1, #369faf, #3b9aad, #4194aa, #468fa6, #4b89a1, #50839c, #547e96, #577890);
+header {
+    height: 100%;
+    /*Photo by Nina Uhlíková: https://www.pexels.com/photo/person-standing-on-hand-rails-with-arms-wide-open-facing-the-mountains-and-clouds-725255/*/
+    background-image: url("../img/showcase/showcase_experience.jpg");
 }
+
 
       

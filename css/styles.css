@@ -73,53 +73,53 @@ header .overlay {
   color: #001a2e;
 }
 
-/*--------------Navbar Styles ---------------------*/
-/*Darken color when color to create a effect*/
-#search:hover{
-  opacity: 100%;
-}
-
+/*Navbar styles*/
 .navbar .navbar-nav .nav-link:hover {
   color: #000000;
 }
 
 .navbar .navbar-nav .nav-link {
-  position: relative;/*Relative positioning*/
+  position: relative;
 }
 
-.navbar-brand  {
-  font-size: 1.5rem;
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  width: 0;
+  font-size: 4em;
 }
 
+.hidden {
+  max-width: 1em;
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
 
+.navbar-brand:hover .hidden{
+  opacity: 0;
+  max-width: 0;
+}
 
-/*Upon hover ,grey bar smoothly show up*/
+.nav-item {
+  font-size: 1em;
+}
+
 .navbar .navbar-nav .nav-link::after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  background-color: grey;
-  color: transparent;
   width: 0;
-  content: '';
+  margin: auto;
+  background-color: #577890;
+  color: transparent;
   height: 3px;
   transition: all 0.5s;
 }
 
 .navbar .navbar-nav .nav-link:hover::after {
   width: 100%;
-}
-
-/*Logo sizing*/
-.logo{
-  height: 60px;
-}
-
-.mask-custom {
-    backdrop-filter: blur(1px);
-    background-color: rgba(255, 255, 255);
 }
 
 

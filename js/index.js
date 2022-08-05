@@ -14,7 +14,7 @@ let currentPhrase = [];
 let isDeleting = false;
 let isEnd = false;
 
-function loop () {
+function loop() {
   isEnd = false;
   textDisplay.innerHTML = currentPhrase.join('');
 
@@ -46,11 +46,12 @@ function loop () {
       }
     }
   }
-  const spedUp = Math.random() * (80 -50) + 50;
-  const normalSpeed = Math.random() * (300 -200) + 200;
+  
+  const spedUp = 65;
+  const normalSpeed = 250;
   let time;
   if (isEnd)
-  time = 2000;
+  time = 1500;
   else if (isDeleting)
   time = spedUp;
   else 
@@ -60,13 +61,13 @@ function loop () {
 loop();
 
 
-var r = 0;
+let r = 0;
 //Define text to be printed with typing effect
-var txt = "About Me.";
+let txt = "About Me.";
 
 function typeWriter(text) {
     //evaluates an expression every 0.3s intervals
-    var interval = setInterval(function(){
+    let interval = setInterval(function(){
         if (r < text.length) {
             //Get element by ID and add letter by letter using charAt
             document.getElementById("type_writer").innerHTML += text.charAt(r);
