@@ -46,6 +46,10 @@ header .overlay {
   z-index: 1;
 } 
 
+.text-header {
+  font-size: 70px;
+}
+
 
 /*Progress scroll button*/
 #progress {
@@ -59,6 +63,7 @@ header .overlay {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
+  z-index: 1000;
 }
 
 #progress-value {
@@ -86,7 +91,8 @@ header .overlay {
   display: flex;
   justify-content: center;
   width: 0;
-  font-size: 4em;
+  margin-left: 1.2em;
+  font-size: 3.8em;
 }
 
 .hidden {
@@ -101,7 +107,7 @@ header .overlay {
 }
 
 .nav-item {
-  font-size: 1em;
+  font-size: 20px;
 }
 
 .navbar .navbar-nav .nav-link::after {
@@ -114,7 +120,7 @@ header .overlay {
   margin: auto;
   background-color: #577890;
   color: transparent;
-  height: 3px;
+  height: 2px;
   transition: all 0.5s;
 }
 

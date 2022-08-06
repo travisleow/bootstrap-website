@@ -1,7 +1,21 @@
-header {
-    height: 100%;
-    /*Photo by Nina Uhlíková: https://www.pexels.com/photo/person-standing-on-hand-rails-with-arms-wide-open-facing-the-mountains-and-clouds-725255/*/
-    background-image: url("../img/showcase/showcase_experience.jpg");
+/*Header styles*/
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.carousel {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
 }
 
 
