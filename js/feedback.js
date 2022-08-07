@@ -19,24 +19,29 @@ function loopWriter() {
   textDisplay.innerHTML = currentPhrase.join('');
 
   if (i < phrases.length) {
-
+    // Checks if phrase is not completed
     if (!isDeleting && j <= phrases[i].length) {
+      // Adds character to currentPhrase
       currentPhrase.push(phrases[i][j]);
       j++;
       textDisplay.innerHTML = currentPhrase.join('');
     }
 
+    // Checks if phrase is on last character
     if(isDeleting && j <= phrases[i].length) {
+      // Removes last character from currentPhrase
       currentPhrase.pop(phrases[i][j]);
       j--;
       textDisplay.innerHTML = currentPhrase.join('');
     }
 
+    // Checks if current phrase is complete
     if (j == phrases[i].length) {
       isEnd = true;
       isDeleting = true;
     }
 
+    // Reset currentPhrase array, isDeleting boolean and i value if current phrase is complete
     if (isDeleting && j === 0) {
       currentPhrase = [];
       isDeleting = false;
@@ -47,19 +52,20 @@ function loopWriter() {
     }
   }
   let time;
+  // Set delay based on different events
   if (isEnd)
   time = 1500;
   else if (isDeleting)
   time = 65;
   else 
   time = 250;
+  // Calls loopWriter based on specified time
   setTimeout(loopWriter, time);
 }
 loopWriter();
 
 
 var r = 0;
-//Define text to be printed with typing effect
 var txt = "Enquiry and Feedback";
 
 function typeWriter(text) {
