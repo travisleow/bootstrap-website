@@ -4,6 +4,18 @@ header {
     background-image: url('../img/showcase/showcase_career.jpg');
 }
 
+
+/*Information technology section styles*/
+.infotech-border {
+	background-color: rgb(252, 252, 252);
+	padding-top: 10em;
+	padding-bottom: 10em;
+	animation: border-animation 4s infinite ease;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	transition: 0.3s;
+}
+
+
 /*Card styles*/
 .card{
 	position: absolute;
@@ -31,14 +43,6 @@ header {
 	transform: rotateY(0deg);
 }
 
-.infotech-border {
-	background-color: rgb(252, 252, 252);
-	padding-top: 10em;
-	padding-bottom: 10em;
-	animation: border-animation 4s infinite ease;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-	transition: 0.3s;
-}
 
 @keyframes border-animation {
 	0% {
