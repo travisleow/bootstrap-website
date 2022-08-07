@@ -23,5 +23,5 @@ function calcScrollValue() {
     scrollProgress.style.background = `conic-gradient(#87AAAA ${scrollValue}%, #C8E3D4 ${scrollValue}%)`;
 }
 
-window.onscroll= calcScrollValue;
+window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;

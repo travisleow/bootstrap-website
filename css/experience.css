@@ -18,5 +18,14 @@ header video {
     box-shadow: 0 15px 50px rgba(0,0,0,0.5);
 }
 
+.modules {
+    /*Image by Christine Sponchia from Pixabay */
+    background-image: url("../img/feather.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+  
+
 
       

@@ -57,6 +57,7 @@ function loopWriter() {
 }
 loopWriter();
 
+
 var r = 0;
 //Define text to be printed with typing effect
 var txt = "Enquiry and Feedback";

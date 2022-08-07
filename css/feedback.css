@@ -21,9 +21,10 @@ header video {
 }
   
 .feedback-border {
-  border: 5px solid #577890;
+  border: 3px solid #577890;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
 }
   
 .form-control:focus {

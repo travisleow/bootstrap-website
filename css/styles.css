@@ -17,12 +17,22 @@
   background-color: #9ac2c2;
 }
 
+.extra-margin {
+  margin-top: 15em;
+  margin-bottom: 15em;
+}
+
+.extra-padding {
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
 /*HTML styles*/
 html {
   max-width: 100%;
   overflow-x: hidden;
   animation: transitionIn 0.75s;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 200px;
 }
 
 /*Header styles*/
@@ -107,7 +117,7 @@ header .overlay {
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .navbar .navbar-nav .nav-link::after {

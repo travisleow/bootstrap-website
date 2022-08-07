@@ -32,6 +32,7 @@ header {
 }
 
 .infotech-border {
+	background-color: rgb(252, 252, 252);
 	padding-top: 10em;
 	padding-bottom: 10em;
 	animation: border-animation 4s infinite ease;

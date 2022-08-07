@@ -55,6 +55,9 @@ header {
   opacity: 0.2;
 }
 
+.img-shadow {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
 
 @keyframes changing-radius {
   0% {
