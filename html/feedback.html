@@ -1,222 +1,238 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Feedback</title>
-        <!-- favicon by Favicon.io -->
-        <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-        <link href="../favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="32x32">
-        <link href="../favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="16x16">
-        <link rel="manifest" href="/site.webmanifest">
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!--Bootstrap Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link href="../css/style.min.css" rel="stylesheet">
-        <link href="../css/styles.css" rel="stylesheet">
-        <link href="../css/feedback.css" rel="stylesheet">
-        <script src="../js/progress.js" defer></script>
-        <script src="../js/feedback.js" defer></script>
-    </head>
-    <body>
-      <div id="progress">
-        <span id="progress-value"><i class="bi bi-arrow-up-short"></i></span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback</title>
+    <!-- favicon by Favicon.io -->
+    <link href="../favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="../favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="../favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../css/style.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/feedback.css" rel="stylesheet">
+    <script src="../js/progress.js" defer></script>
+    <script src="../js/feedback.js" defer></script>
+  </head>
+  <body>
+
+    <!--Progress bar-->
+    <div id="progress">
+      <span id="progress-value"><i class="bi bi-arrow-up-short"></i></span>
+    </div>
+    <!--Progress bar-->
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-black bg-white shadow-0">
+      <div class="container">
+        <!--Navbar brand-->
+        <a class="navbar-brand display-3 text-secondary" href="index.html">
+        <span>T</span>
+        <span>r</span>
+        <span class="hidden">a</span>
+        <span class="hidden">v</span>
+        <span class="hidden">i</span>
+        <span class="hidden">s</span>
+        <span>.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <!--Navbar items-->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">Experience in SP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="career.html">Career Options</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="feedback.html">Feedback</a>
+            </li>
+          </ul>
+        </div>
       </div>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-black bg-white shadow-0">
-            <div class="container">
-              <a class="navbar-brand display-3 text-secondary" href="index.html">
-                <span>T</span>
-                <span>r</span>
-                <span class="hidden">a</span>
-                <span class="hidden">v</span>
-                <span class="hidden">i</span>
-                <span class="hidden">s</span>
-                <span>.</span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="experience.html">Experience in SP</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="career.html">Career Options</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="feedback.html">Feedback</a>
-                  </li>
-                </ul>
+    </nav>
+    <!--Navbar-->
+
+    <!--Header-->
+    <header class="position-relative" id="parallax">
+      <!-- Overlay -->
+      <div class="overlay position-absolute bg-black"></div>
+      <!--Video from https://coverr.co/videos/a-guy-walking-on-a-beach-KjCkGLFW8R?utm_source=coverr&utm_medium=referral&utm_content=creditShareLink-->
+      <video autoplay="autoplay" loop="loop">
+        <source src="../img/showcase/showcase_feedback.mp4" type="video/mp4">
+      </video>
+      <!-- The header content -->
+      <div class="container-fluid position-relative h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white hover-shadow">
+            <h1 class="display-1"><span id="text"></span></h1>
+            <p class="lead mb-0">Let me know what you think about my website.</p>
+          </div>
+        </div>
+        <a href="#first" class="position-absolute fixed-bottom text-center mb-5" id="Scroll">
+        <i class="bi bi-chevron-double-down" id="arrow"></i>
+        <br />
+        </a>
+      </div>
+    </header>
+    <!--Header-->
+
+    <!--Feedback section-->
+    <section id="first" class="extra-margin">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="m-3"><span id="type_writer" class="text-secondary"></span><span class="cursor text-secondary">|</span></h1>
+          <p class="lead">Your feedback means <span class="text-bg-secondary">a lot</span>. Do spend some time on it to let me know on what to improve on.</p>
+        </div>
+        <!--Forms-->
+        <div class="row justify-content-center pt-2 feedback-border">
+          <!--Occupy 2 columns on lg and 1 column on sm-->
+          <div class="col-sm-12 col-lg-6">
+            <!--Form-->
+            <form>
+              <!--Name input-->
+              <label for="name" class="form-label mt-4"><span class="text-danger">* </span>Name:</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+                </span>
+                <input type="text" class="form-control" id="name" placeholder="e.g John Doe" required>
               </div>
-            </div>
-          </nav>
-
-        <header class="position-relative" id="parallax">
-          
-          <!-- Overlay -->
-          <div class="overlay position-absolute bg-black"></div>
-          
-          <!--Video from https://coverr.co/videos/a-guy-walking-on-a-beach-KjCkGLFW8R?utm_source=coverr&utm_medium=referral&utm_content=creditShareLink-->
-          <video autoplay="autoplay" loop="loop">
-            <source src="../img/showcase/showcase_feedback.mp4" type="video/mp4">
-          </video>
-          
-          <!-- The header content -->
-          <div class="container-fluid position-relative h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-              <div class="w-100 text-white hover-shadow">
-                <h1 class="display-1"><span id="text"></span></h1>
-                  <p class="lead mb-0">Let me know what you think about my website.</p>
+              <!--Name input-->
+              <!--Email input-->
+              <label for="email" class="form-label"><span class="text-danger">* </span>Email:</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input type="email" class="form-control" id="email" placeholder="e.g John_Doe@example.com" required>
+              </div>
+              <p class="small form-text text-muted mb-4">
+                Your email will be kept confidential
+              </p>
+              <!--Email input-->
+              <!--Date of visit input-->
+              <label for="date">Date of Visit</label>
+              <div class="input-group mb-4 mt-1">
+                <span class="input-group-text">
+                <i class="bi bi-calendar-fill"></i>
+                </span>
+                <input name="date" id="date" class="form-control" type="date" />
+              </div>
+              <!--Date of visit input-->
+              <!--Favourite page option-->
+              <label for="favourite" class="form-label"><span class="text-danger">* </span>Which is your favourite page?</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                <i class="bi bi-star-fill"></i>
+                </span>
+                <select id="favourite" class="form-select" required>
+                  <option label="Select"></option>
+                  <option value="aboutme">About Me</option>
+                  <option value="experience">Experience in SP</option>
+                  <option value="career">DIT</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+              <!--Favourite page option-->
+              <!--Question radio-->
+              <label>Would you refer this website to anyone?</label>
+              <div class="form-check radio-btn mt-1">
+                <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio1">
+                <label class="form-check-label" for="radio1">
+                Yes
+                </label>
+              </div>
+              <div class="form-check radio-btn">
+                <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio2" checked>
+                <label class="form-check-label" for="radio2">
+                No
+                </label>
+              </div>
+              <div class="form-check radio-btn">
+                <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio3">
+                <label class="form-check-label" for="radio3">
+                Maybe
+                </label>
+              </div>
+              <!--Question radio-->
+              <!--Feedback textarea-->
+              <label for="feedback" class="form-label mt-4">Feedback:</label>
+              <div class="input-group">
+                <span class="input-group-text">
+                <i class="bi bi-box-arrow-in-right"></i>
+                </span>
+                <textarea id="feedback" class="form-control"></textarea>
+              </div>
+              <!--Feedback textarea-->
+              <!--Buttons-->
+              <div class="row mb-4 mt-5">
+                <div class="col">
+                  <!--Submit button-->
+                  <button type="submit" class="btn btn-secondary btn-outline-primary">Submit</button>
+                </div>
+                <div class="col-4 col-sm-2">
+                  <!--Reset button-->
+                  <button type="reset" class="btn btn-secondary btn-outline-primary">Reset</button>
                 </div>
               </div>
-              <a href="#first" class="position-absolute fixed-bottom text-center mb-5" id="Scroll">
-              <i class="bi bi-chevron-double-down" id="arrow"></i>
-              <br />
-              </a>
-            </div>
-          </header>
-          
-          <section id="first" class="extra-margin">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h1 class="m-3"><span id="type_writer" class="text-secondary"></span><span class="cursor text-secondary">|</span></h1>
-                    <p class="lead">Your feedback means <span class="text-bg-secondary">a lot</span>. Do spend some time on it to let me know on what to improve on.</p>
-                </div>
-                <div class="row justify-content-center pt-2 feedback-border">
-                    <div class="col-sm-12 col-lg-6">
-                        <form>
-                            <label for="name" class="form-label mt-4"><span class="text-danger">* </span>Name:</label>
-                            <div class="mb-4 input-group">
-                                <span class="input-group-text">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <input type="text" class="form-control" id="name" placeholder="e.g John Doe" required>
-                            </div>
+              <!--Buttons-->
+            </form>
+            <!--Form-->
+          </div>
+          <!--Occupy 2 column on md, display:none on sizes smaller than lg-->
+          <!--Image by unDraw.co-->
+          <div class="col-md-6"><img src="../img/undraw_feedback.svg" class="img-fluid d-none d-lg-block mt-4" alt="Feedback Image"/></div>
+        </div>
+      </div>
+    </section>
+    <!--Feedback section-->
 
-                            <label for="email" class="form-label"><span class="text-danger">* </span>Email:</label>
-                            <div class="input-group">
-                                <span class="input-group-text">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </span>
-                                <input type="email" class="form-control" id="email" placeholder="e.g John_Doe@example.com" required>
-                            </div>
-                            <p class="small form-text text-muted mb-4">
-                                Your email will be kept confidential
-                            </p>
-
-                            <label for="date">Date of Visit</label>
-                            <div class="input-group mb-4 mt-1">
-                                <span class="input-group-text">
-                                  <i class="bi bi-calendar-fill"></i>
-                                </span>
-                                <input name="date" id="date" class="form-control" type="date" />
-                            </div>
-
-
-                            <label for="favourite" class="form-label"><span class="text-danger">* </span>Which is your favourite page?</label>
-                            <div class="input-group mb-4">
-                                <span class="input-group-text">
-                                    <i class="bi bi-star-fill"></i>
-                                </span>
-                                <select id="favourite" class="form-select" required>
-                                    <option value="aboutme" selected>About Me</option>
-                                    <option value="experience">Experience in SP</option>
-                                    <option value="career">DIT</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="none">None</option>
-                                </select>
-                            </div>
-
-                            <label>Would you refer this website to anyone?</label>
-                            <div class="form-check radio-btn mt-1">
-                              <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio1">
-                              <label class="form-check-label" for="radio1">
-                                Yes
-                              </label>
-                            </div>
-                            <div class="form-check radio-btn">
-                              <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio2" checked>
-                              <label class="form-check-label" for="radio2">
-                                No
-                              </label>
-                            </div>
-                            <div class="form-check radio-btn">
-                              <input class="custom-control-input form-check-input" type="radio" name="flexRadioDefault" id="radio3">
-                              <label class="form-check-label" for="radio3">
-                                Maybe
-                              </label>
-                            </div>
-
-                            <label for="feedback" class="form-label mt-4">Feedback:</label>
-                            <div class="input-group">
-                              <span class="input-group-text">
-                                <i class="bi bi-box-arrow-in-right"></i>
-                              </span>
-                              <textarea id="feedback-textarea" class="form-control"></textarea>
-                            </div>
-
-                            <div class="row mb-4 mt-5">
-                              <div class="col">
-                                  <button type="submit" class="btn btn-secondary btn-outline-primary">Submit</button>
-                              </div>
-                              <div class="col-4 col-sm-2">
-                                  <button type="reset" class="btn btn-secondary btn-outline-primary">Reset</button>
-                              </div>
-                            </div>
-
-                        </form>
-                    </div>
-                    <!--Image by unDraw.co-->
-                    <div class="col-sm-6"><img src="../img/undraw_feedback.svg" class="img-fluid d-none d-lg-block mt-4" alt="Feedback Image"/></div>
-                </div>
-            </div>
-          </section>
-
-          <footer class="bg-dark text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-              <!-- Section: Social media -->
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/travis.leow.9" role="button" target="_blank">
-                  <i class="bi bi-facebook"></i>
-                </a>
-          
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/travis_adelie" role="button" target="_blank">
-                  <i class="bi bi-twitter"></i>
-                </a>
-          
-                <!-- Youtube -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCmOvJ2zEs92kqjCg4ajqbpw" role="button" target="_blank">
-                  <i class="bi bi-youtube"></i>
-                </a>
-          
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/troovia/" role="button" target="_blank">
-                  <i class="bi bi-instagram"></i>
-                </a>
-          
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/tleow" role="button" target="_blank">
-                  <i class="bi bi-github"></i>
-                </a>
-              </section>
-              <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
-          
-            <!-- Copyright -->
-            <div class="text-center pb-3">
-              <i class="bi bi-c-circle"></i> Travis Leow Wenkai | Singapore
-            </div>
-          </footer>
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/travis.leow.9" role="button" target="_blank">
+          <i class="bi bi-facebook"></i>
+          </a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/travis_adelie" role="button" target="_blank">
+          <i class="bi bi-twitter"></i>
+          </a>
+          <!-- Youtube -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCmOvJ2zEs92kqjCg4ajqbpw" role="button" target="_blank">
+          <i class="bi bi-youtube"></i>
+          </a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/troovia/" role="button" target="_blank">
+          <i class="bi bi-instagram"></i>
+          </a>
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/tleow" role="button" target="_blank">
+          <i class="bi bi-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Copyright -->
+      <div class="text-center pb-3">
+        <i class="bi bi-c-circle"></i> Travis Leow Wenkai | Singapore
+      </div>
+    </footer>
+    <!--Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+  </body>
 </html>
