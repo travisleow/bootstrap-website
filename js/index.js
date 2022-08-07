@@ -19,24 +19,29 @@ function loopWriter() {
   textDisplay.innerHTML = currentPhrase.join('');
 
   if (i < phrases.length) {
-
+    // Checks if phrase is not completed
     if (!isDeleting && j <= phrases[i].length) {
+      // Adds character to currentPhrase
       currentPhrase.push(phrases[i][j]);
       j++;
       textDisplay.innerHTML = currentPhrase.join('');
     }
 
+    // Checks if phrase is on last character
     if(isDeleting && j <= phrases[i].length) {
+      // Removes last character from currentPhrase
       currentPhrase.pop(phrases[i][j]);
       j--;
       textDisplay.innerHTML = currentPhrase.join('');
     }
 
+    // Checks if current phrase is complete
     if (j == phrases[i].length) {
       isEnd = true;
       isDeleting = true;
     }
 
+    // Reset currentPhrase array, isDeleting boolean and i value if current phrase is complete
     if (isDeleting && j === 0) {
       currentPhrase = [];
       isDeleting = false;
@@ -47,33 +52,34 @@ function loopWriter() {
     }
   }
   let time;
+  // Set delay based on different events
   if (isEnd)
   time = 1500;
   else if (isDeleting)
   time = 65;
   else 
   time = 250;
+  // Calls loopWriter based on specified time
   setTimeout(loopWriter, time);
 }
 loopWriter();
 
 
 let r = 0;
-//Define text to be printed with typing effect
 let txt = "About Me.";
 
 function typeWriter(text) {
-    //evaluates an expression every 0.3s intervals
+    // Evaluates an expression every 0.3s intervals
     let interval = setInterval(function(){
         if (r < text.length) {
-            //Get element by ID and add letter by letter using charAt
+            // Get element by ID and add letter by letter using charAt
             document.getElementById("type_writer").innerHTML += text.charAt(r);
             r++;
         }
     }, 300);
 }
 
-//Only execute upon scrolling to that section. This is implemented by using a listener and offsets
+// Only execute upon scrolling to that section. This is implemented by using a listener and offsets
 document.addEventListener('scroll',function(e){
     if (window.pageYOffset + window.innerHeight > document.querySelector("#first").offsetTop + 200){
         typeWriter(txt);
