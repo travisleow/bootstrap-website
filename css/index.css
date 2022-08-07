@@ -1,3 +1,4 @@
+/*Individual text styles*/
 #html {
   background-color: #f6b26b;
 }
@@ -10,6 +11,7 @@
   background-color: #ffe599;
 }
 
+
 /*Header styles*/
 header {
   /*Image by JCH from Pixabay*/
@@ -19,6 +21,7 @@ header {
 #text {
   font-size: 70px;
 }
+
 
 /*Image style*/
 .wandering {
@@ -39,6 +42,7 @@ header {
 .myself:hover, .wandering:hover {
   transform: translateY(20px) rotate(2deg);
 }
+
 
 /*Carousel Styles*/
 .carousel {
